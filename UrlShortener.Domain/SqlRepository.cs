@@ -34,7 +34,7 @@ namespace UrlShortener.Domain
 
         public void IncreaseUrlHitCount(int urlId)
         {
-            dc.ExecuteCommand("UPDATE urls SET hitcount = hitcount + 1 WHERE id = {0} ", ulrId);
+            dc.ExecuteCommand("UPDATE urls SET hitcount = hitcount + 1 WHERE id = {0} ", urlId);
         }
     }
 }
